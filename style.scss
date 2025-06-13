@@ -1,0 +1,354 @@
+* {
+        margin: 0;
+        padding: 0;
+     }  
+      
+     html { overflow-x: hidden; }
+       
+    body {
+        font-family: "Montserrat", sans-serif; 
+        overflow-x: hidden; 
+        transition: background-color 0.5s; 
+      } 
+    
+    a {
+        text-decoration: none;
+      } 
+      
+    .center {
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+      } 
+       
+    /* ШАПКА*/
+    .top { 
+      background: #E1FF8F;
+      background-image: url(img/star1.svg), url(img/star-big.svg), url(img/star2.svg);
+      background-position: 63px 69px, calc(100% + 482px) calc(80%), calc(100% - 344px) calc(100% - 55px);
+      background-repeat: no-repeat; 
+      overflow: hidden;
+      position: relative;    
+      
+       
+      &__title {
+        color: #202027;
+        font-family: "Montserrat", sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;  
+        padding-top: 196px; 
+        padding-bottom: 24px;
+      } 
+       
+      &__text{
+        color: #202027;
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        padding-bottom: 48px;
+      } 
+       
+      &__text_mob {
+        display: none;
+    } 
+       
+      &__link { 
+        display: inline-block; 
+        box-sizing: border-box; 
+        padding-top: 16px;
+        width: 247px;
+        height: 66px;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF; 
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;  
+        line-height: 141.688%;
+        margin-bottom: 156px;
+      } 
+       
+      &__link_mob {
+        display: none;
+      }
+      
+      &__link:hover {
+        background: #FFF;
+        color: #000;
+      } 
+    
+    }  
+     
+    /*Полоса прокрутки*/
+    .scrollbar {  
+      backdrop-filter: blur(50px);
+      background: rgb(188, 236, 48);
+      overflow: hidden; 
+      white-space: nowrap;
+       
+       
+      &__content {
+        display: flex; 
+        align-items: center; 
+        flex-wrap: wrap; 
+        width: 3220px;
+        height: 90px; 
+        animation: scroll 16s linear infinite;
+      }
+      
+       
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+       
+      &__text {
+        font-family: "Montserrat";
+        color: rgb(32, 32, 39);
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-right: 51px;
+        padding-left: 51px;
+      }  
+       
+      &-mob {
+        display: none;
+      }
+    } 
+
+    /*Об играх*/
+    .games {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: #202027; 
+      background-image: url(img/star-mini3.svg), url(img/big\ \ black-star.svg);  
+      background-position: 25px 770px, 111% 85px;  
+      background-repeat: no-repeat;
+
+      &__title {
+        color: #FFF;
+        font-family: "Montserrat",sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 94px;
+        padding-bottom: 24px;
+      }
+      
+      &__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;  
+        padding-bottom: 72px;
+      }
+      
+      &-img {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+        align-items: start;
+      }
+      
+      &-img__card {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 4;
+        background-color: #FFFFFF ;
+        border-radius: 30px; 
+        transition: all 0.3s; 
+         
+        &:hover {
+          transform: scale(1.1);
+        }  
+        
+      }
+      
+      &-img__item {
+        border-radius: 30px;
+        height: 314px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      } 
+       
+      &-img__item-x {
+        border-radius: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+      &-img__card_top {
+        margin-top: -40px;
+      }
+      
+      &-img__item1 {
+        background: url(img/card1.svg);
+      }
+      &-img__item2 {
+        background: url(img/card2.svg);
+      }
+      &-img__item3{
+        background: url(img/card3.svg);
+      }
+      &-img__item4{
+        background: url(img/card4.jpg);
+      }
+      &-img__item5{
+        background: url(img/card5.svg);
+      }
+      &-img__item6{
+        background: url(img/card6.svg);
+      }
+      
+      &-img__number {
+        height: 36px;
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        margin-left: 35px;
+        margin-bottom: 16px; 
+        margin-right: 210px;
+      }
+      
+      &-img__text, &-img__text1, &-img__text2 {
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        text-align: left;
+        padding: 0 36px 32px;
+      } 
+    
+    } 
+    /*Мини-игры*/ 
+    .mini-games { 
+      background-color: #202027; 
+      background-image: url(img/star-mini1.svg), url(img/star-mini2.svg);
+      background-position: calc(100% - 80px) calc(100% - 3299px), calc(100% - 80px) calc(100% - 45px);
+      background-repeat: no-repeat; 
+      padding-bottom: 134px; 
+      transition: background-color 0.5s;
+       
+      &__title {
+        color: #FFF;
+        font-family: "Montserrat",sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;  
+        padding-top: 46px; 
+        padding-bottom: 72px;
+      } 
+    } 
+    /*Карточки мини-игр*/ 
+    .game-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;  
+      gap: 32px; 
+    
+      &__wrapper {
+        display: flex; 
+        border-radius: 30px;
+        background: #FFF;
+      } 
+       
+      &__wrapper_two {
+        flex-direction: row-reverse;
+      }
+        
+      &__container {
+        display: flex; 
+        flex-wrap: wrap;
+        flex-direction: column;  
+        background-color: #FFFFFF; 
+        border-radius: 30px;  
+        width: 600px; 
+       }  
+
+      &__title {  
+        color: rgb(32, 32, 39); 
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px; 
+        padding-top: 48px; 
+        padding-left: 48px; 
+      } 
+       
+      &__text {
+        color: rgb(32, 32, 39);  
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px; 
+        padding-top: 24px; 
+        padding-left: 48px; 
+      } 
+       
+      &__text_mob {
+        display: none;
+      }  
+       
+      &__link { 
+        display: inline-block;
+        width: 247px;
+        height: 66px; 
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF; 
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%; 
+        cursor: pointer; 
+        text-align: center;  
+        margin-top: 36px; 
+        margin-left: 48px; 
+         
+        &:hover {
+          background-color: #fff; 
+          color: #000;
+        }
+      } 
+       
+      &__img {
+        border-radius: 30px; 
+        
+      } 
+       
+    }  
+
+    /*Подвал*/
+    .footer {
+     background: rgb(189, 237, 53);  
+      
+     &__title { 
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px; 
+      align-items: center; 
+      display: flex; 
+      flex-direction: column; 
+      padding-top: 61px; 
+      padding-bottom: 60px;
+     }
+    }
+     
+    @import 'tablet';
+    @import 'mobile';

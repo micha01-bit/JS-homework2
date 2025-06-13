@@ -1,0 +1,72 @@
+@media (max-width: 1024px) { 
+
+  html { overflow-x: hidden; } 
+
+    .center {
+        padding-left: calc(50% - 393px); 
+        padding-right: calc(50% - 393px);
+    }  
+
+    .games-img {
+        grid-template-columns: repeat(8, 1fr); 
+        align-items: baseline; 
+         
+         
+        &__text1 { 
+          padding-bottom: 70px;
+        } 
+         
+        &__text2 { 
+          padding-bottom: 110px;
+        }
+
+    }  
+     
+    .game-cards {
+        gap: 24px;  
+        justify-content: center; 
+         
+        &__wrapper {
+          width: 786px;
+          flex-direction: column-reverse;  
+        }  
+         
+        &__container {
+          padding: 48px;
+        } 
+         
+        &__title {
+          padding-top: 0; 
+          padding-left: 0;
+        } 
+         
+        &__text {
+          padding-left: 0;
+        }  
+         
+        &__link {
+          margin-left: 0;
+        }
+    }   
+} 
+ 
+@media (min-width: 768px) and (max-width: 833px) { 
+   
+  html { overflow-x: hidden; } 
+
+    .center {
+        padding-left: 24px; 
+        padding-right: 24px;
+      }
+     
+    .games-img {
+        grid-template-columns: repeat(8, 1fr); 
+        align-items: baseline; 
+
+          
+        &__text1, &__text2 { 
+          padding-bottom: 70px;
+        } 
+         
+    }
+}
