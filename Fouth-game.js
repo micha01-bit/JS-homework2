@@ -51,12 +51,12 @@ function showQuestion() {
             showQuestion();
         }
     } else {
-        showResults();
+        showResults2();
     }
 }
 
 // Функция показа результатов
-function showResults() {
+function showResults2() {
     alert(`Вы правильно ответили на ${correctCount} из ${quiz.length} вопросов.`);
 }
 
