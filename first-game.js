@@ -14,7 +14,7 @@ function playGame() {
     }
 
     alert("Поздравляем! Вы угадали число!");
-}
-
+} 
+ 
 // Обработчик события для кнопки "Играть!"
-document.querySelector('#playButton').addEventListener('click', playGame);
+document.querySelector('#playButton').addEventListener('click', playGame); 
